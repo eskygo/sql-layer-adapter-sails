@@ -1,18 +1,18 @@
 {
   "name": "sails-fdb",
   "description": "a FoundationDB adapter for Waterline and Sails.js",
-  "version": "0.10.0",
+  "version": "0.10.1",
   "author": "FoundationDB <info@foundationdb.com>",
-  "url": "https://github.com/FoundationDB/sql-layer-adapter-sequel",
+  "url": "https://github.com/FoundationDB/sql-layer-adapter-sails",
   "keywords": [
-    "postgresql",
+    "foundationdb",
     "orm",
     "waterline",
     "sails"
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/FoundationDB/sql-layer-adapter-sequel.git"
+    "url": "git://github.com/FoundationDB/sql-layer-adapter-sails.git"
   },
   "dependencies": {
     "pg": "~3.3.0",
@@ -34,7 +34,7 @@
     "lib": "./lib"
   },
   "license": "MIT",
-  "bugs": "https://github.com/FoundationDB/sql-layer-adapter-sequel/issues",
+  "bugs": "https://github.com/FoundationDB/sql-layer-adapter-sails/issues",
   "waterlineAdapter": {
     "waterlineVersion": "0.10.0-rc15",
     "interfaces": [
