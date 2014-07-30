@@ -1,7 +1,7 @@
 {
   "name": "sails-fdb",
   "description": "a FoundationDB adapter for Waterline and Sails.js",
-  "version": "0.10.1",
+  "version": "0.10.2",
   "author": "FoundationDB <info@foundationdb.com>",
   "url": "https://github.com/FoundationDB/sql-layer-adapter-sails",
   "keywords": [
