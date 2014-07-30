@@ -1,7 +1,7 @@
 {
   "name": "sails-fdb",
   "description": "a FoundationDB adapter for Waterline and Sails.js",
-  "version": "0.10.2",
+  "version": "0.10.4",
   "author": "FoundationDB <info@foundationdb.com>",
   "url": "https://github.com/FoundationDB/sql-layer-adapter-sails",
   "keywords": [
@@ -22,7 +22,9 @@
   },
   "devDependencies": {
     "waterline-adapter-tests": "git://github.com/hchandl/waterline-adapter-tests.git",
-    "captains-log": "~0.11.1"
+    "captains-log": "~0.11.1",
+    "mocha": "~1.12.1",
+    "should": "~3.1.2"
   },
   "scripts": {
     "test": "make test"
