@@ -5,14 +5,14 @@
   "author": "FoundationDB <info@foundationdb.com>",
   "url": "https://github.com/FoundationDB/sql-layer-adapter-sails",
   "keywords": [
-    "foundationdb",
+    "postgresql",
     "orm",
     "waterline",
     "sails"
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/FoundationDB/sql-layer-adapter-sails.git"
+    "url": "git://github.com/foundationdb/sql-layer-adapter-sails"
   },
   "dependencies": {
     "pg": "~3.3.0",
@@ -21,10 +21,8 @@
     "waterline-errors": "~0.10.0"
   },
   "devDependencies": {
-    "mocha": "~1.12.1",
-    "should": "~3.1.2",
-    "captains-log": "~0.11.1",
-    "waterline": "0.10.0-rc15"
+    "waterline-adapter-tests": "git://github.com/hchandl/waterline-adapter-tests.git",
+    "captains-log": "~0.11.1"
   },
   "scripts": {
     "test": "make test"
@@ -34,7 +32,7 @@
     "lib": "./lib"
   },
   "license": "MIT",
-  "bugs": "https://github.com/FoundationDB/sql-layer-adapter-sails/issues",
+  "bugs": "https://github.com/foundationdb/sql-layer-adapter-sails/issues",
   "waterlineAdapter": {
     "waterlineVersion": "0.10.0-rc15",
     "interfaces": [
