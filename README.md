@@ -13,7 +13,7 @@ the default ORM for [Sails](https://github.com/balderdashy/sails). Adapted from 
 Installation is through NPM.
 
 ```bash
-$ npm install sails-fdb
+$ npm install sails-fdbsql
 ```
 
 ### Configuration
