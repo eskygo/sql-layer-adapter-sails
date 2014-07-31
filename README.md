@@ -6,7 +6,7 @@ storage substrate. It provides high performance, multi-node scalability,
 fault-tolerance and true multi-key ACID transactions.
 
 This project provides adapter integration for [Waterline](https://github.com/balderdashy/waterline), 
-the default ORM for [Sails](https://github.com/balderdashy/sails).
+the default ORM for [Sails](https://github.com/balderdashy/sails). Adapted from the Waterline [PostgreSQL adapter](https://github.com/balderdashy/sails-postgresql).
 
 ### Installation
 

@@ -1,8 +1,8 @@
 {
-  "name": "sails-fdb",
-  "description": "a FoundationDB adapter for Waterline and Sails.js",
+  "name": "sails-fdbsql",
+  "description": "A FoundationDB SQL Layer adapter for Waterline and Sails.js",
   "version": "0.10.4",
-  "author": "FoundationDB <info@foundationdb.com>",
+  "author": "FoundationDB <distribution@foundationdb.com>",
   "url": "https://github.com/FoundationDB/sql-layer-adapter-sails",
   "keywords": [
     "postgresql",
@@ -45,3 +45,4 @@
     ]
   }
 }
+
