@@ -1,5 +1,5 @@
 /**
- * FoundationDB SQL Layer Sequel Adapter
+ * FoundationDB SQL Layer Adapter
  * Copyright © 2013 Cody Stoltman
  * Copyright (c) 2014 FoundationDB, LLC
  *
