@@ -44,7 +44,8 @@ describe('adapter', function() {
   var definition = {
     id: {
       type: 'serial',
-      autoIncrement: true
+      autoIncrement: true,
+      primaryKey: true
     },
     name: {
       type: 'string',
