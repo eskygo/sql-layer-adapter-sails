@@ -138,7 +138,7 @@ function dropTable(table, client, cb) {
   table = '"' + table + '"';
 
   var query = "DROP TABLE " + table + ';';
-  client.query(query, cb);
+  adapter.query('test', table, query, cb);
 }
 
 function createRecord(table, client, cb) {
