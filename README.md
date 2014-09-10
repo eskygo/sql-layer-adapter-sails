@@ -1,12 +1,13 @@
 ## FoundationDB SQL Layer Sails/Waterline Adapter
 
-The [FoundationDB SQL Layer](https://github.com/FoundationDB/sql-layer) is a
-full SQL implementation built on the [FoundationDB](https://foundationdb.com)
-storage substrate. It provides high performance, multi-node scalability,
-fault-tolerance and true multi-key ACID transactions.
+The [FoundationDB SQL Layer](https://foundationdb.com/layers/sql) is a
+fault-tolerant and scalable open source RDBMS, best suited for applications
+with high concurrency and short transactional workloads.
 
 This project provides adapter integration for [Waterline](https://github.com/balderdashy/waterline), 
-the default ORM for [Sails](https://github.com/balderdashy/sails). Adapted from the Waterline [PostgreSQL adapter](https://github.com/balderdashy/sails-postgresql).
+the default ORM for [Sails](https://github.com/balderdashy/sails).
+
+Adapted from the Waterline [PostgreSQL adapter](https://github.com/balderdashy/sails-postgresql).
 
 ### Installation
 
