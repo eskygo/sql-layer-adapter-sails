@@ -75,12 +75,13 @@ describe('query', function() {
 
       var schema = {
         test: {
-          name: { type: 'text' }
+          name: { type: 'text' },
+          age: {type: 'number'}
         }
       };
 
-      var query = new Query({ name: { type: 'text' }}, schema).find('test', criteria);
-      var sql = 'SELECT "test"."name" FROM "test" WHERE LOWER("test"."name") = $1 ' +
+      var query = new Query(schema.test, schema).find('test', criteria);
+      var sql = 'SELECT "test"."name", "test"."age" FROM "test" WHERE LOWER("test"."name") = $1 ' +
                 'ORDER BY "test"."name" ASC, "test"."age" ASC';
 
       query.query.should.eql(sql);
@@ -101,16 +102,41 @@ describe('query', function() {
 
       var schema = {
         test: {
+          name: { type: 'text' },
+          age: {type: 'number'}
+        }
+      };
+
+      var query = new Query(schema.test, schema).find('test', criteria);
+      var sql = 'SELECT "test"."name", "test"."age" FROM "test" WHERE LOWER("test"."name") = $1 ' +
+                'ORDER BY "test"."name" ASC, "test"."age" DESC';
+
+      query.query.should.eql(sql);
+    });
+
+    it('should unknown keys, for example, functions to be used for sorting', function(){
+      // Lookup criteria
+      var criteria = {
+        where: {
+          name: 'foo'
+        },
+        sort: {
+          name: 1,
+          "znear(homelat,homelng,1,1)": 1
+        }
+      };
+
+      var schema = {
+        test: {
           name: { type: 'text' }
         }
       };
 
       var query = new Query({ name: { type: 'text' }}, schema).find('test', criteria);
       var sql = 'SELECT "test"."name" FROM "test" WHERE LOWER("test"."name") = $1 ' +
-                'ORDER BY "test"."name" ASC, "test"."age" DESC';
+                'ORDER BY "test"."name" ASC, znear(homelat,homelng,1,1) ASC';
 
       query.query.should.eql(sql);
-    });
-
+    })
   });
 });
